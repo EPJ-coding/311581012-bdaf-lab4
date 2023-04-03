@@ -2,6 +2,7 @@
 
 ## Proxies, Proxies everywhere
 There are five contracts in this repo:
+- **MockDaiToken** : a contract that deploys an ERC20 token for test.
 - **Safe** : contract allows deposit, withdraw and takes a 0.1% tax.
 - **SafeUpgradeable** : 
     - Implementation of Safe contract, but **in Proxy pattern**.
@@ -18,7 +19,7 @@ There are five contracts in this repo:
         - Deploys a proxy, points the proxy to the current Safe Implementation. Initializes the proxy so that the message sender is the owner of the new Safe.
     - `function deploySafe() external`
         - Deploys the original Safe contract. Note that you might need to modify the Safe contract so that the original caller of the `deploySafe` contract will be the owner of the deployed "Safe” contract.
-- **MockDaiToken** : a contract that deploys an ERC20 token for test.
+
 
 
 # How to run it
