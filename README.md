@@ -41,6 +41,7 @@ With [npm](https://npmjs.org/) installed, run
     
 ## Test the five contracts and get the gas report
 there are four different javascript files in /test to test each contract
+
     $ npx hardhat test
  
 ## Solidity Coverage Test
