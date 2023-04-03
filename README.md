@@ -7,7 +7,7 @@ There are five contracts in this repo:
 - **SafeUpgradeable** : 
     - Implementation of Safe contract, but **in Proxy pattern**.
     - Constructor becomes a separate callable function.
-    - SafeUpgradeableV2 in this contract is used for proxy test, updates the string variable `version` to "v2" and the tax rate to 0.2%.
+    - SafeUpgradeableV2 in this contract is used for proxy test, updates the string variable `version` from "v1" to "v2" and the tax rate to 0.2%.
 - **Proxy** : 
     - Use unstructured storage to store “owner” and “implementation”.
     - Only the “owner” is able to update the implementation of the proxy.
