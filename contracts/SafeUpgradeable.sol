@@ -52,7 +52,7 @@ contract SafeUpgradeable {
         return owner;
     }
 
-    function getVersion() public view returns (string memory) {
+    function getVersion() public pure returns (string memory) {
         return version;
     }
 
@@ -120,7 +120,7 @@ contract SafeUpgradeableV2 {
         return owner;
     }
 
-    function getVersion() public view returns (string memory) {
+    function getVersion() public pure returns (string memory) {
         return version;
     }
 
