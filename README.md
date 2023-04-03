@@ -10,7 +10,7 @@ There are five contracts in this repo:
 - **Proxy** : 
     - Use unstructured storage to store “owner” and “implementation”.
     - Only the “owner” is able to update the implementation of the proxy.
-- **SafeFactory** : a factory contract with following features.
+- **SafeFactory** : 
     - Stores the address of the Safe Implementation in a storage.
     - `function updateImplementation(address newImp) external`
         - The Safe implementation address can only be updated by the owner of the Factory contract.
