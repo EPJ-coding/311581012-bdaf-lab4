@@ -14,11 +14,11 @@ There are five contracts in this repo:
 - **SafeFactory** : 
     - Stores the address of the Safe Implementation in a storage.
     - `function updateImplementation(address newImp) external`
-        - The Safe implementation address can only be updated by the owner of the Factory contract.
+        - Set the Safe implementation address, which can only be updated by the owner of the Factory contract.
     - `function deploySafeProxy() external`
         - Deploys a proxy, points the proxy to the current Safe Implementation. Initializes the proxy so that the message sender is the owner of the new Safe.
     - `function deploySafe() external`
-        - Deploys the original Safe contract. Note that you might need to modify the Safe contract so that the original caller of the `deploySafe` contract will be the owner of the deployed "Safe” contract.
+        - Deploys the original Safe contract. The caller of the `deploySafe` contract will be the owner of the deployed "Safe” contract.
 
 
 
